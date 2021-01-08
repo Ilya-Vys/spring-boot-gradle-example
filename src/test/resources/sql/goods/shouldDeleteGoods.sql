@@ -1,0 +1,1 @@
+INSERT INTO GOODS (goods_id, goods_name, goods_price) VALUES (100,'Notebook', 1000);

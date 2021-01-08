@@ -1,0 +1,1 @@
+INSERT INTO GOODS (goods_id, goods_name, goods_price) VALUES (77,'Bounty', 33);

@@ -1,0 +1,1 @@
+INSERT INTO ORDERS (order_id, order_name) VALUES (70, 'Order70');

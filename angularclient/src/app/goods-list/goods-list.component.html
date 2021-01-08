@@ -1,0 +1,23 @@
+<p>
+  goods-list works!
+</p>
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let goods of goods">
+        <td>{{ goods.id }}</td>
+        <td>{{ goods.name }}</td>
+        <td>{{goods.price}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

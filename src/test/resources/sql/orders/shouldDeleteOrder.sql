@@ -1,0 +1,1 @@
+INSERT INTO ORDERS (order_id, order_name, order_date, order_address) VALUES (100,'Order100', '2020-01-01 10:10:10','Moscow');
