@@ -68,5 +68,6 @@ public class GoodsController {
         }
         service.delete(goods);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
     }
 }
