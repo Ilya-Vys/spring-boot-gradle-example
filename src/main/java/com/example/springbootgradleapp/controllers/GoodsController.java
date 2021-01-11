@@ -47,7 +47,7 @@ public class GoodsController {
         if(goods == null){
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-        service.save(goods);
+        goods = service.save(goods);
         return new ResponseEntity<>(goods, HttpStatus.CREATED);
     }
 
