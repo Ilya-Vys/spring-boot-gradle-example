@@ -7,18 +7,22 @@ import {Goods} from "./goods";
 @Injectable()
 export class GoodsService {
 
-  private usersUrl: string;
+  private goodsUrl: string;
 
   constructor(private http: HttpClient) {
-    this.usersUrl = 'http://localhost:8080/api/goods/';
+    this.goodsUrl = 'http://localhost:8080/api/goods/';
   }
 
   public findAll(): Observable<Goods[]> {
-    return this.http.get<Goods[]>(this.usersUrl);
+    return this.http.get<Goods[]>(this.goodsUrl);
   }
 
   public save(goods: Goods) {
-    return this.http.post<Goods>(this.usersUrl, goods);
+    return this.http.post<Goods>(this.goodsUrl, goods);
+  }
+
+  public delete(id: string){
+    return this.http.delete(this.goodsUrl + '/' + id);
   }
 
 }

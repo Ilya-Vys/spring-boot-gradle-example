@@ -16,6 +16,9 @@
         <td>{{ goods.id }}</td>
         <td>{{ goods.name }}</td>
         <td>{{goods.price}}</td>
+        <td>
+          <input type="button" value="Удалить" (click)="delete(goods)" class="btn btn-danger" />
+        </td>
       </tr>
       </tbody>
     </table>

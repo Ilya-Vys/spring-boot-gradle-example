@@ -8,18 +8,22 @@ import { GoodsListComponent } from './goods-list/goods-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import {GoodsService} from "./goods-service.service";
 import {HttpClientModule} from "@angular/common/http";
+import { GoodsFormComponent } from './goods-form/goods-form.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoodsListComponent
+    GoodsListComponent,
+    GoodsFormComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
 
   ],
   providers: [GoodsService],

@@ -18,4 +18,10 @@ export class GoodsListComponent implements OnInit {
       this.goods = data;
     });
   }
+
+  delete(goods: Goods){
+    this.goodsService.delete(goods.id).subscribe(data =>{
+      this.ngOnInit();
+    });
+  }
 }
